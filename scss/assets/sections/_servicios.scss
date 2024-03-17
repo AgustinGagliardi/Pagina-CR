@@ -1,0 +1,176 @@
+.serviciostit {
+    text-align: center;
+    font-weight: bold;
+    background-color: #A9E190;
+    margin: 10px;
+    border-radius: 0.2cm;
+}
+
+.servicios {
+
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: #A9E190;
+
+    .uno {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h2 {
+            font-weight: bold;
+            padding-left: 15px;
+
+        }
+
+        p {
+            padding-left: 15px;
+        }
+
+    }
+
+    .dos {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding: 5px 10px;
+        }
+
+    }
+
+    .tres {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding: 5px 10px;
+        }
+
+    }
+
+    .cuatro {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding: 5px 10px;
+        }
+
+    }
+
+    .cinco {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding: 5px 10px;
+        }
+    }
+
+    .seis {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        background-color: green;
+        border-radius: 0.5cm;
+        color: white;
+
+        h3 {
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+        p {
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .servicios {
+        background-color: rgb(224, 222, 222);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "uno cinco"
+            "dos seis"
+            "tres foto"
+            "cuatro foto"
+        ;
+        list-style: none;
+        margin: 10px;
+        padding: 20px;
+
+        .uno {
+            grid-area: uno;
+
+        }
+
+        .dos {
+            grid-area: dos;
+        }
+
+        .tres {
+            grid-area: tres;
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+        }
+
+        .cinco {
+            grid-area: cinco;
+        }
+
+        .seis {
+            grid-area: seis;
+        }
+
+    }
+}
