@@ -1,0 +1,15 @@
+.navbar{
+    background-color: $colores-600;
+    .navbar-collapse{
+        margin-right:auto;
+        justify-content: flex-end;
+    }
+    
+    .nav-link{
+        font-weight: bold;
+    }
+    
+    .nav-item{
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,313 @@
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+    ;
+    margin: 10px;
+
+    .area1 {
+        display: flex;
+        flex-direction: column;
+
+        .texto-principal {
+            grid-area: texto-principal;
+
+            .main-text {
+                font-weight: bold;
+            }
+
+
+            .texto2 {
+                font-weight: bold;
+                text-transform: uppercase;
+
+            }
+        }
+
+    }
+
+    .area2 {
+        grid-area: area2;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 25px solid $colores-600;
+        }
+
+    }
+
+    .area3 {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        grid-auto-flow:column;
+        grid-template-areas:
+         "caja1 caja2 caja3";
+        grid-area: area3;
+        margin: 10px;
+
+        .caja1 {
+            grid-area: caja1;
+            background-color: $colores-700;
+            border-radius: 0.5cm;
+
+            .textcaja1 {
+                margin: 30px;
+                color: white;
+                font-weight: bold;
+            }
+
+            img {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .caja2 {
+            grid-area: caja2;
+            background-color: $colores-200;
+            border-radius: 0.5cm;
+
+            .textcaja2 {
+                margin: 30px;
+                color: $colores-950;
+                font-weight: bold;
+            }
+
+            img {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .caja3 {
+            grid-area: caja3;
+            background-color: $colores-700;
+            border-radius: 0.5cm;
+
+            .textcaja3 {
+                margin: 30px;
+                color: white;
+                font-weight: bold;
+            }
+
+            img {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+.repre-texto {
+    text-align: center;
+    font-weight: bold;
+}
+
+.repre-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    align-items: center;
+
+    .zoom-wrapper {
+        transition: transform 0.8s;
+        height: 100%;
+    }
+
+
+}
+
+.repre-img img {
+    width: 200px;
+}
+
+.aseg-texto {
+    text-align: center;
+    margin: 20px;
+}
+
+.carousel-slide {
+    margin: 10px;
+
+}
+
+@media (min-width: 200px) {
+
+    .caja3 {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 0.7fr 0.4fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "area1 area2"
+            "area1 area2"
+            "area3 area3";
+
+        margin: 10px;
+    }
+
+    .area1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 10px;
+
+        .texto-principal {
+            grid-area: texto-principal;
+
+            .main-text {
+                font-weight: bold;
+                font-size: 60px;
+            }
+
+        }
+
+        .texto2 {
+            font-weight: bold;
+            text-transform: uppercase;
+
+
+        }
+
+    }
+
+    .area2 {
+        grid-area: area2;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-left: 25px solid $colores-600;
+            border-bottom: 0px solid white;
+
+
+
+        }
+
+    }
+
+    .area3 {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        grid-auto-flow:row;
+        grid-template-areas:
+         "caja1 caja2 caja3";
+        grid-area: area3;
+        margin: 10px;
+
+
+    }
+
+    .caja1 {
+        grid-area: caja1;
+        background-color: $colores-700;
+        border-radius: 0.5cm;
+
+        .textcaja1 {
+            margin: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        img {
+            margin-left: 30px;
+        }
+    }
+
+    .caja2 {
+        grid-area: caja2;
+        background-color: $colores-200;
+        border-radius: 0.5cm;
+
+        .textcaja2 {
+            margin: 30px;
+            color: $colores-950;
+            font-weight: bold;
+        }
+
+        img {
+            margin-left: 30px;
+
+        }
+    }
+
+    .caja3 {
+        grid-area: caja3;
+        background-color: $colores-700;
+        border-radius: 0.5cm;
+        display: inline;
+
+        .textcaja3 {
+            margin: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        img {
+            margin-left: 30px;
+        }
+    }
+
+    .repre-texto {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .repre-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-left: 12px;
+        align-items: center;
+
+        .zoom-wrapper {
+            transition: transform 0.8s;
+            height: 100%;
+        }
+
+
+    }
+
+    .repre-img img {
+        width: 200px;
+    }
+
+    .aseg-texto {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .carousel-slide {
+        margin: 10px;
+
+    }
+
+}
