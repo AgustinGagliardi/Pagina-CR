@@ -17,3 +17,14 @@
 .animate__animated.animate__bounceInUp{
     animation-duration: 2s;
 }
+
+button:hover{
+    background-color: black;
+    color: white;
+    animation-duration: 2s;
+
+}
+
+iframe:hover{
+    border: 3px solid rgb(31, 130, 163);
+}
