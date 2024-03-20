@@ -752,8 +752,195 @@ iframe:hover {
   .como-llegar {
     display: none; } }
 
+.plkmain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "plk" "rsp"; }
+  .plkmain .plk {
+    grid-area: plk;
+    background-color: #008000;
+    margin: 5px;
+    border-radius: 0.5cm;
+    color: white; }
+    .plkmain .plk h1 {
+      font-weight: bold;
+      text-align: center;
+      margin: 5px; }
+    .plkmain .plk .linea-plk {
+      display: none;
+      border-bottom: 10px solid white;
+      transform: skewX(-20deg) skewY(0deg);
+      scale: 0.3;
+      translate: -150px; }
+    .plkmain .plk h2 {
+      margin: 10px 30px 30px 30px; }
+    .plkmain .plk .plk-fabrica {
+      display: none; }
+  .plkmain .video {
+    grid-area: video;
+    display: none; }
+  .plkmain .rsp {
+    grid-area: rsp;
+    background-color: #008000;
+    margin: 5px;
+    margin-bottom: 30px;
+    border-radius: 0.5cm;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .plkmain .rsp h2 {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 5px;
+      text-align: center; }
+    .plkmain .rsp h3 {
+      margin: 10px 30px 30px 30px; }
+    .plkmain .rsp a {
+      margin: 10px 30px 30px 30px;
+      color: white;
+      display: flex; }
+    .plkmain .rsp img {
+      grid-area: rsplogo;
+      width: 50vw;
+      margin: 10px; }
+
+@media (min-width: 992px) {
+  .plkmain {
+    background-image: linear-gradient(to left, rgba(10, 218, 121, 0.747), gray);
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "plk video" "plk rsp"; }
+    .plkmain .plk {
+      grid-area: plk;
+      background-color: green;
+      margin: 5px;
+      border-radius: 0.5cm;
+      color: white;
+      display: flex;
+      flex-direction: column; }
+      .plkmain .plk h1 {
+        font-weight: bold;
+        font-size: 80px;
+        margin: 30px 50px 10px 50px; }
+      .plkmain .plk .linea-plk {
+        display: inline;
+        border-bottom: 10px solid white;
+        transform: skewX(-20deg) skewY(0deg);
+        scale: 0.3;
+        translate: -160px; }
+      .plkmain .plk h2 {
+        font-size: 20px;
+        margin: 10px 50px 50px 50px; }
+      .plkmain .plk .plk-fabrica {
+        display: inline;
+        height: 270px;
+        width: 30vw;
+        margin: 0px 30px 30px 30px;
+        border-radius: 0.2cm; }
+    .plkmain .video {
+      grid-area: video;
+      display: flex;
+      flex-direction: row-reverse;
+      width: 65vw;
+      margin: 10px;
+      align-items: center; }
+    .plkmain .rsp {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "rsptext rsplogo";
+      grid-area: rsp;
+      align-items: center;
+      justify-items: center; }
+      .plkmain .rsp .rsptext {
+        grid-area: rsptext; }
+        .plkmain .rsp .rsptext h2 {
+          font-weight: bold;
+          font-size: 35px;
+          margin: 10px;
+          text-align: start; }
+        .plkmain .rsp .rsptext h3 {
+          font-size: 20px;
+          margin: 20px 10px;
+          margin-top: 30px; }
+        .plkmain .rsp .rsptext a {
+          font-size: 20px;
+          margin: 10px;
+          margin-top: 90px;
+          color: white; }
+      .plkmain .rsp img {
+        grid-area: rsplogo;
+        width: 20vw; } }
+
+.main-site .banner-bienv {
+  width: 100%;
+  height: 300px;
+  background-image: url(../resourse/sicav-servizi-industria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.637), #0000009a); }
+  .main-site .banner-bienv .texto-pri-neil {
+    font-weight: bold; }
+
 .main-site .neil-sobre {
   display: none; }
+
+.main-site .descri-neil .texto-neil {
+  text-align: center;
+  margin-top: 20px; }
+  .main-site .descri-neil .texto-neil p {
+    display: none; }
+
+.main-site .descri-neil img {
+  width: 50vw; }
+
+.main-site .descri-neil .ft-camion {
+  margin-right: 25%;
+  margin-left: 25%; }
+
+.main-site iframe {
+  display: none; }
+
+.main-site .climati {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .main-site .climati img {
+    width: 100vw;
+    transition: 0.5s;
+    transform: scale(0.8); }
+  .main-site .climati img:hover {
+    transform: scale(1); }
+
+.main-site .autos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .main-site .autos img {
+    width: 100vw;
+    transition: 0.5s;
+    transform: scale(0.8); }
+  .main-site .autos img:hover {
+    transform: scale(1); }
+  .main-site .autos a {
+    margin: 20px; }
 
 @media (min-width: 992px) {
   .main-site .banner-bienv {
@@ -796,9 +983,11 @@ iframe:hover {
       margin-top: 200px; }
       .main-site .descri-neil .texto-neil h2 {
         font-weight: bold; }
+      .main-site .descri-neil .texto-neil p {
+        display: inline; }
     .main-site .descri-neil .ft-camion {
       grid-area: ft-camion;
-      height: 90%;
+      height: 80%;
       margin-top: 30px; }
   .main-site button {
     text-decoration: none;
@@ -806,6 +995,7 @@ iframe:hover {
     font-weight: bold;
     border-radius: 0.2cm; }
   .main-site iframe {
+    display: inline;
     margin-left: 30%; }
   .main-site .neil2 {
     display: grid;

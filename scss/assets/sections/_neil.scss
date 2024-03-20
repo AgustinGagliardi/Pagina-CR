@@ -1,6 +1,93 @@
 .main-site {
+
+    .banner-bienv {
+        width: 100%;
+        height: 300px;
+        background-image: url(../resourse/sicav-servizi-industria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.637), #0000009a);
+
+        .texto-pri-neil {
+            font-weight: bold;
+        }
+
+
+    }
+
     .neil-sobre {
         display: none;
+    }
+
+    .descri-neil {
+        .texto-neil {
+            text-align: center;
+            margin-top: 20px;
+
+            p {
+                display: none;
+            }
+
+        }
+
+        img {
+            width: 50vw;
+        }
+
+        .ft-camion {
+            margin-right: 25%;
+            margin-left: 25%;
+        }
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .climati {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        img {
+
+            width: 100vw;
+            transition: 0.5s;
+            transform: scale(0.8);
+        }
+
+        img:hover {
+            transform: scale(1);
+        }
+    }
+
+    .autos {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        img {
+            width: 100vw;
+            transition: 0.5s;
+            transform: scale(0.8);
+        }
+
+        img:hover {
+            transform: scale(1);
+        }
+
+        a {
+            margin: 20px;
+        }
     }
 }
 
@@ -57,6 +144,10 @@
                     font-weight: bold;
                 }
 
+                p {
+                    display: inline;
+                }
+
 
 
 
@@ -65,12 +156,13 @@
 
             .ft-camion {
                 grid-area: ft-camion;
-                height: 90%;
+                height: 80%;
                 margin-top: 30px;
             }
 
 
         }
+
         button {
             text-decoration: none;
             border: 3px solid black;
@@ -80,10 +172,11 @@
         }
 
         iframe {
+            display: inline;
             margin-left: 30%;
         }
 
-        
+
         .neil2 {
             display: grid;
             grid-template-columns: 0.3fr 0.3fr;
@@ -94,61 +187,61 @@
                 "climati autos"
             ;
             justify-content: space-around;
-    
+
             .climati {
                 grid-area: climati;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 flex-direction: column;
-    
+
                 img {
-    
+
                     width: 20vw;
                     transition: 0.5s;
                     transform: scale(0.8);
                 }
-    
+
                 img:hover {
                     transform: scale(1);
                 }
-    
+
                 a {
                     margin: 20px;
                 }
-    
+
                 h3 {
                     margin-top: -85px;
                 }
-    
+
             }
-    
+
             .autos {
                 grid-area: autos;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 flex-direction: column;
-    
+
                 img {
                     width: 30vw;
                     transition: 0.5s;
                     transform: scale(0.6);
                 }
-    
+
                 img:hover {
                     transform: scale(0.8);
                 }
-    
+
                 a {
                     margin: 20px;
                 }
             }
-    
-        }
-       
 
-        
+        }
+
+
+
 
 
 
